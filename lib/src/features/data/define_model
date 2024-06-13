@@ -1,0 +1,4 @@
+class LoginModel{
+    final String username;
+    final String password;
+}
