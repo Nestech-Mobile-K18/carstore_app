@@ -1,18 +1,21 @@
 import 'package:go_router/go_router.dart';
+import 'package:my_app/src/pages/application/application_page.dart';
 import 'package:my_app/src/pages/forgot_password_page.dart';
-import 'package:my_app/src/pages/home_page.dart';
+import 'package:my_app/src/pages/home/home_page.dart';
 import 'package:my_app/src/pages/login/login_page.dart';
 import 'package:my_app/src/pages/register/register_page.dart';
 import 'package:my_app/src/pages/welcome_page.dart';
 
 class RouteName {
-  static const String homeRoute = '/';
+  static const String applicationRoute = '/application';
+  static const String homeRoute = '/home';
   static const String welcomeRoute = '/welcome';
   static const String loginRoute = '/login';
   static const String registerRoute = '/register';
   static const String forgotPasswordRoute = '/forgotPassword';
 
   static const publicRoutes = [
+    applicationRoute,
     homeRoute,
     welcomeRoute,
     loginRoute,
@@ -30,6 +33,10 @@ final router = GoRouter(
     return RouteName.welcomeRoute;
   },
   routes: [
+    GoRoute(
+      path: RouteName.applicationRoute,
+      builder: (context, state) => const ApplicationPage(),
+    ),
     GoRoute(
       path: RouteName.homeRoute,
       builder: (context, state) => const HomePage(),

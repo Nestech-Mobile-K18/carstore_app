@@ -15,4 +15,5 @@ class ColorsGlobal {
   static const textGrey = Color.fromRGBO(174, 174, 178, 1.0);
   static const globalGreen = Color.fromRGBO(52, 199, 89, 1.0);
   static const globalTransparent = Color.fromRGBO(0, 0, 0, 0);
+  static const globalColorReSearch = Color.fromRGBO(237, 238, 239, 1.0);
 }

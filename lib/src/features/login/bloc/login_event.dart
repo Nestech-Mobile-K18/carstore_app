@@ -1,4 +1,4 @@
-class LoginEvent {}
+abstract class LoginEvent {}
 
 class LoginStarted extends LoginEvent {
   LoginStarted({required this.username, required this.password});

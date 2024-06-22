@@ -2,7 +2,7 @@ import 'package:bloc/bloc.dart';
 import 'package:my_app/src/features/data/register/user.dart';
 import 'package:my_app/src/features/register/bloc/register_event.dart';
 import 'package:my_app/src/features/register/bloc/register_state.dart';
-import 'package:my_app/src/services/mock/user/user_api.dart';
+import 'package:my_app/src/services/api/user_api.dart';
 
 class RegisterBloc extends Bloc<RegisterEvent, RegisterState> {
   final UserAPI _userAPI;

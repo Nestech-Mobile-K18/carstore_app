@@ -78,7 +78,7 @@ class _LoginPageState extends State<LoginPage> {
           listener: (context, state) {
             if (state is LoginSuccess) {
               print('Login successful, navigating to HomePage');
-              context.go(RouteName.homeRoute);
+              context.go(RouteName.applicationRoute);
             } else if (state is LoginFailure) {
               ScaffoldMessenger.of(context).showSnackBar(
                 const SnackBar(content: Text('Đăng nhập thất bại')),

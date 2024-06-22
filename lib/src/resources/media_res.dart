@@ -14,4 +14,8 @@ class MediaRes {
   static const instagramIcon = '$_baseImage/instagram.png';
   static const youtubeIcon = '$_baseImage/youtube.png';
   static const googleIcon = '$_baseImage/google.png';
+  // home
+  static const doubleSlider = '$_baseImage/slider.png';
+  static const threeHundredSixtyView = '$_baseImage/360view.png';
+  static const videoPlay = '$_baseImage/video_play.png';
 }

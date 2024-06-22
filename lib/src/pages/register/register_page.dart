@@ -103,7 +103,7 @@ class _RegisterPageState extends State<RegisterPage> {
           listener: (context, state) {
             if (state is RegisterSuccess) {
               print('Login successful, navigating to HomePage');
-              context.go(RouteName.homeRoute);
+              context.go(RouteName.applicationRoute);
             } else if (state is RegisterFailure) {
               ScaffoldMessenger.of(context).showSnackBar(
                 const SnackBar(content: Text('Đăng kí thất bại')),

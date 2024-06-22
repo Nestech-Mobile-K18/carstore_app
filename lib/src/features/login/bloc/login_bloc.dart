@@ -1,6 +1,6 @@
 import 'package:bloc/bloc.dart';
 import 'package:my_app/src/features/data/register/user.dart';
-import 'package:my_app/src/services/mock/user/user_api.dart';
+import 'package:my_app/src/services/api/user_api.dart';
 
 import 'login_event.dart';
 import 'login_state.dart';
